@@ -1,0 +1,50 @@
+
+/* CSS TABLE OF CONTENTS 
+  # TYPOGRAPHY
+    # BODY
+    # LINKS
+    # HEADINGS
+  # STRUCTURE
+    # HEADER
+    # FOOTER
+    # NAV
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 87.5% /*14px*/
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1  {
+    font-size: 3em;
+}
+
+a {
+    color: rgb(82, 66, 66);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(209, 209, 209, 1);
+}
+
+.site-header,
+.site-footer {
+    text-align: center;
+}
+
+.site-navigation ul {
+    padding: 0;
+}
+
+.site-navigation ul li {
+    display: inline-block;
+}
+
+.site-navigation ul li a {
+    display: block;
+    padding: 1em;
+}
