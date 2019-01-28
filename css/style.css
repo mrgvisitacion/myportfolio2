@@ -1,7 +1,7 @@
-
 /* CSS TABLE OF CONTENTS 
   # TYPOGRAPHY
     # BODY
+    # PARAGRAPH
     # LINKS
     # HEADINGS
   # STRUCTURE
@@ -11,40 +11,79 @@
 */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 87.5% /*14px*/
-    max-width: 1000px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 87.5%; /* 14px */
+    color: rgba(0, 0, 0, 0.7);
     margin: 0 auto;
     padding: 1rem;
-}
-
-h1  {
-    font-size: 3em;
-}
-
-a {
-    color: rgb(82, 66, 66);
+    max-width: 1000px;
+  }
+  
+  p {
+    max-width: 35em;
+  }
+  
+  a {
+    color: rgba(0, 51, 102, 0.8);
     text-decoration: none;
-}
-
-a:hover {
-    color: rgba(209, 209, 209, 1);
-}
-
-.site-header,
-.site-footer {
+  }
+  
+  a:hover {
+    color: rgba(0, 51, 102, 1);
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  /* HELPER CLASSES */
+  .text-centered {
     text-align: center;
-}
-
-.site-navigation ul {
+  }
+  
+  /* STRUCTURE */
+  
+  .site-header,
+  .site-footer {
+    text-align: center;
+  }
+  
+  .site-navigation ul {
     padding: 0;
-}
-
-.site-navigation ul li {
+  }
+  
+  .site-navigation ul li {
     display: inline-block;
-}
-
-.site-navigation ul li a {
+  }
+  
+  .site-navigation ul li a {
     display: block;
     padding: 1em;
-}
+  }
+  
+  /* MEDIA */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* THUMBGRID */
+  
+  .thumbgrid {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .thumbgrid li {
+    list-style: none;
+    width: 49.5%;
+    padding-bottom: 0.4%;
+  }
+  
+  @media (min-width: 768px) {
+    .thumbgrid li {
+      width: 24.5%;
+    }
+  }
